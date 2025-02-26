@@ -1,270 +1,334 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVN1QZZBFW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-MVN1QZZBFW');
-  </script>
-  <meta charset="utf-8">
-  <meta name="description" content="Versia lets your customers enter a virtual showroom and fully customize their future purchase. This immersive experience lets them see and interact with their customized product as if it’s already theirs.">
-  <meta name="keywords" content="VR, XR, AR, Augmented, Virtual, Reality, Development, Editor, Immersive, Versia, Version, Variant, Options, Caravan, Car, Yacht, Boat, Van, Motorhome, Mobile Home, Customization, Custom">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Versia Studio</title>
-  <link href="img/VersiaFaviconDark.png" rel="icon" media="(prefers-color-scheme: dark)" />
-  <link href="img/VersiaFaviconLight.png" rel="icon" media="(prefers-color-scheme: light)"  />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
-    rel="stylesheet" />
-  <style>
-    body {
-      font-family: Poppins;
-      color: rgb(100, 100, 100);
-      font-weight: 300;
-      font-size: 20px;
-    }
-
-    .navbar-custom,
-    .bg {
-      background-color: #4C87AD;
-    }
-
-    .navbar-custom .navbar-brand,
-    .navbar-custom .navbar-nav .nav-link {
-      color: #ffffff;
-      font-size: 18px;
-    }
-
-    .VersiaSectionSpacing {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    h1 {
-      font-family: Sen;
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.25 !important;
-      letter-spacing: -0.05rem !important;
-      margin-bottom: 40px;
-    }
-
-    .btn-primary,
-    .btn-primary:active,
-    .btn-primary:visited {
-      font-size: 18px;
-      background-color: rgba(255, 147, 35, 1) !important;
-      border-color: rgba(255, 147, 35, 1) !important;
-    }
-
-    .btn-primary:hover {
-      background-color: rgb(228, 154, 76) !important;
-      border-color: rgba(255, 147, 35, 1) !important;
-    }
-
-    .custom-toggler.navbar-toggler {
-      border-color: white;
-      color: transparent;
-    }
-
-    .custom-toggler .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
-
-    .navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
-    /* Extra small devices (portrait phones, less than 576px) */
-    @media (max-width: 1199px) {
-      #UseCase {
-        background-image: url("img/Fair6_Squeze.jpg");
-        height: 70vh;
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MVN1QZZBFW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
+      gtag("js", new Date());
 
-    /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 1200px) {
-      #UseCase {
-        background-image: url("img/Fair6.jpg");
-        height: 100vh;
+      gtag("config", "G-MVN1QZZBFW");
+    </script>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Versia lets your customers enter a virtual showroom and fully customize their future purchase. This immersive experience lets them see and interact with their customized product as if it’s already theirs."
+    />
+    <meta
+      name="keywords"
+      content="VR, XR, AR, Augmented, Virtual, Reality, Development, Editor, Immersive, Versia, Version, Variant, Options, Caravan, Car, Yacht, Boat, Van, Motorhome, Mobile Home, Customization, Custom"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Versia Studio</title>
+    <link
+      href="img/VersiaFaviconDark.png"
+      rel="icon"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      href="img/VersiaFaviconLight.png"
+      rel="icon"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Poppins;
+        color: rgb(100, 100, 100);
+        font-weight: 300;
+        font-size: 20px;
       }
-    }
 
-    /* Medium devices (tablets, 768px and up) */
-    /* @media (min-width: 768px) and (max-width: 991px) { ... } */
+      .navbar-custom,
+      .bg {
+        background-color: #4c87ad;
+      }
 
-    /* Large devices (desktops, 992px and up) */
-    /* @media (min-width: 992px) and (max-width: 1199px) { ... } */
+      .navbar-custom .navbar-brand,
+      .navbar-custom .navbar-nav .nav-link {
+        color: #ffffff;
+        font-size: 18px;
+      }
 
-    /* Extra large devices (large desktops, 1200px and up) */
-    /*@media (min-width: 1200px) {
+      .VersiaSectionSpacing {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      h1 {
+        font-family: Sen;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.25 !important;
+        letter-spacing: -0.05rem !important;
+        margin-bottom: 40px;
+      }
+
+      .btn-primary,
+      .btn-primary:active,
+      .btn-primary:visited {
+        font-size: 18px;
+        background-color: rgba(255, 147, 35, 1) !important;
+        border-color: rgba(255, 147, 35, 1) !important;
+      }
+
+      .btn-primary:hover {
+        background-color: rgb(228, 154, 76) !important;
+        border-color: rgba(255, 147, 35, 1) !important;
+      }
+
+      .custom-toggler.navbar-toggler {
+        border-color: white;
+        color: transparent;
+      }
+
+      .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+
+      .navbar-toggler,
+      .navbar-toggler:focus,
+      .navbar-toggler:active,
+      .navbar-toggler-icon:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+
+      /* Extra small devices (portrait phones, less than 576px) */
+      @media (max-width: 1199px) {
+        #UseCase {
+          background-image: url("img/Fair6_Squeze.jpg");
+          height: 70vh;
+        }
+      }
+
+      /* Small devices (landscape phones, 576px and up) */
+      @media (min-width: 1200px) {
+        #UseCase {
+          background-image: url("img/Fair6.jpg");
+          height: 100vh;
+        }
+      }
+
+      /* Medium devices (tablets, 768px and up) */
+      /* @media (min-width: 768px) and (max-width: 991px) { ... } */
+
+      /* Large devices (desktops, 992px and up) */
+      /* @media (min-width: 992px) and (max-width: 1199px) { ... } */
+
+      /* Extra large devices (large desktops, 1200px and up) */
+      /*@media (min-width: 1200px) {
       #UseCase {
         background-image: url("https://assets.softr-files.com/applications/993e16a6-8980-400f-aede-704a4a6f46a1/assets/8558f6ed-f2a3-40ce-bede-db611d35de0a.png");
       }
     }*/
 
-    #UseCase {
-      background-position: center !important;
-      background-attachment: scroll !important;
-      background-size: cover !important;
-      background-repeat: no-repeat !important;
-      display: flex;
-      align-items: flex-end;
-    }
+      #UseCase {
+        background-position: center !important;
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        display: flex;
+        align-items: flex-end;
+      }
 
-    .white {
-      color: white;
+      .white {
+        color: white;
+      }
 
-    }
+      .black {
+        color: rgb(25, 25, 25);
+      }
 
-    .black {
-      color: rgb(25, 25, 25);
-    }
+      #Features {
+        background-color: rgba(235, 238, 244, 1);
+      }
 
-    #Features {
-      background-color: rgba(235, 238, 244, 1);
-    }
+      .VersiaTextFeaturesTittle {
+        color: rgb(111, 118, 121);
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 18px;
+      }
 
-    .VersiaTextFeaturesTittle {
-      color: rgb(111, 118, 121);
-      font-family: Poppins;
-      font-weight: 600;
-      font-size: 18px;
-    }
+      .VersiaTextFeaturesContent {
+        color: rgb(111, 118, 121);
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 20px;
+      }
 
-    .VersiaTextFeaturesContent {
-      color: rgb(111, 118, 121);
-      font-family: Poppins;
-      font-weight: 400;
-      font-size: 18px;
-      padding-top: 8px;
-      padding-bottom: 20px;
-    }
+      .VersiaFooter {
+        font-size: 12px;
+      }
 
-    .VersiaFooter {
-      font-size: 12px;
-    }
+      .thin {
+        font-weight: lighter;
+      }
+    </style>
+  </head>
 
-    .thin {
-      font-weight: lighter;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Menu -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-      <a class="navbar-brand" href="#home">
-        <img src="img/Logo3.png" width="50" height="50" alt="">
-      </a>
-      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-text">
-          <li class="nav-item px-2 ms-auto">
-            <a class="nav-link" href="#UseCase">Use Case</a>
-          </li>
-          <li class="nav-item px-2 ms-auto">
-            <a class="nav-link nav-text" href="#Product">Examples</a>
-          </li>
-          <li class="nav-item ps-2 pe-4 ms-auto">
-            <a class="nav-link nav-text" href="#Features">Features</a>
-          </li>
-          <li class="nav-item ms-auto">
-            <a href="#Contact" class="btn btn-primary btn-lg active contact-button px-4 rounded-1" role="button"
-              aria-pressed="true">Contact</a>
-          </li>
-        </ul>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="img/Logo3.png" width="50" height="50" alt="" />
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-text">
+            <li class="nav-item px-2 ms-auto">
+              <a class="nav-link" href="#UseCase">Use Case</a>
+            </li>
+            <li class="nav-item px-2 ms-auto">
+              <a class="nav-link nav-text" href="#Product">Examples</a>
+            </li>
+            <li class="nav-item ps-2 pe-4 ms-auto">
+              <a class="nav-link nav-text" href="#Features">Features</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a
+                href="#Contact"
+                class="btn btn-primary btn-lg active contact-button px-4 rounded-1"
+                role="button"
+                aria-pressed="true"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Text + video -->
-  <div id="Hero">
+    <!-- Text + video -->
+    <div id="Hero">
       <div class="container">
         <div class="row VersiaSectionSpacing align-items-center">
           <div class="col-md-5">
-            <h1 class="black">Let Your Clients Customize their Future Purchase in VR</h1>
-            <p class="pb-5">With Versia, customers can enter a virtual
-              showroom and fully customize their future purchase. <br /><br />This immersive experience lets them see and
-              interact with their customized product as if it’s already theirs.
+            <h1 class="black">
+              Let Your Clients Customize their Future Purchase in VR
+            </h1>
+            <p class="pb-5">
+              With Versia, customers can enter a virtual showroom and fully
+              customize their future purchase. <br /><br />This immersive
+              experience lets them see and interact with their customized
+              product as if it’s already theirs.
             </p>
           </div>
-          <div class="col-md-1"></div> <!-- Empty column for spacing -->
+          <div class="col-md-1"></div>
+          <!-- Empty column for spacing -->
           <div class="col-md-6">
-            <video allowfullscreen="allowfullscreen" width="100%" loop autoplay muted src="videos/HeroVideo1.webm"></video>
+            <video
+              allowfullscreen="allowfullscreen"
+              width="100%"
+              loop
+              autoplay
+              muted
+              src="videos/HeroVideo1.webm"
+            ></video>
           </div>
         </div>
       </div>
     </div>
 
-  <!-- Use case -->
-  <div id="UseCase" class="white">
-    <div class="container VersiaSectionSpacing">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Use Case</h1>
-          <p>Versia excels in tight spaces, making it ideal for Fairs
-            or managing multiple Salons where displaying all versions of your product is challenging.</p>
+    <!-- Use case -->
+    <div id="UseCase" class="white">
+      <div class="container VersiaSectionSpacing">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Use Case</h1>
+            <p>
+              Versia excels in tight spaces, making it ideal for Fairs or
+              managing multiple Salons where displaying all versions of your
+              product is challenging.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Product examples -->
-  <div id="Product">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-5 VersiaSectionSpacing">
-          <h1 class="black">Product Examples<br /></h1>
-          <p>Versia works well with products that offer
-            customization, such as caravans, cars, yachts and many more.</p>
+    <!-- Product examples -->
+    <div id="Product">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 VersiaSectionSpacing">
+            <h1 class="black">Product Examples<br /></h1>
+            <p>
+              Versia works well with products that offer customization, such as
+              caravans, cars, yachts and many more.
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+          <!-- Empty column for spacing -->
+          <div class="col-md-6">
+            <video
+              allowfullscreen="allowfullscreen"
+              width="100%"
+              loop
+              autoplay
+              muted
+              src="videos/Products1.webm"
+            ></video>
+          </div>
         </div>
-        <div class="col-md-1"></div> <!-- Empty column for spacing -->
-        <div class="col-md-6">
-            <video allowfullscreen="allowfullscreen" width="100%" loop autoplay muted src="videos/Products1.webm"></video>
-         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Features -->
-  <div id="Features">
-    <div class="container VersiaSectionSpacing ">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h1 class="black" style="margin-bottom: 50px;">Features</h1>
-          <div class="row">
-            <div class="col d-flex align-items-start">
-              <img width="50" height="50" src="img/Pallete2.png" />
-              <div class="ps-5 mt-1">
-                <div class="VersiaTextFeaturesTittle">Customization</div>
-                <div class="VersiaTextFeaturesContent">Option to change layouts, materials, colors and environments.</div>
+    <!-- Features -->
+    <div id="Features">
+      <div class="container VersiaSectionSpacing">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="black" style="margin-bottom: 50px">Features</h1>
+            <div class="row">
+              <div class="col d-flex align-items-start">
+                <img width="50" height="50" src="img/Pallete2.png" />
+                <div class="ps-5 mt-1">
+                  <div class="VersiaTextFeaturesTittle">Customization</div>
+                  <div class="VersiaTextFeaturesContent">
+                    Option to change layouts, materials, colors and
+                    environments.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-<!--           <div class="row">
+            <!--           <div class="row">
             <div class="col d-flex align-items-start">
               <img width="50" height="50" src="img/Hands2.png" />
               <div class="ps-5 mt-1" >
@@ -274,87 +338,115 @@
             </div>
           </div> -->
 
-          <div class="row">
-            <div class="col d-flex align-items-start">
-              <img width="50" height="50" src="img/Headset.png" />
-              <div class="ps-5 mt-1">
-                <div class="VersiaTextFeaturesTittle">No product, no problem</div>
-                <div class="VersiaTextFeaturesContent">Showcase your product anywhere, all you need is a headset.</div>
+            <div class="row">
+              <div class="col d-flex align-items-start">
+                <img width="50" height="50" src="img/Headset.png" />
+                <div class="ps-5 mt-1">
+                  <div class="VersiaTextFeaturesTittle">
+                    No product, no problem
+                  </div>
+                  <div class="VersiaTextFeaturesContent">
+                    Showcase your product anywhere, all you need is a headset.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col d-flex align-items-start">
-              <img width="50" height="50" src="img/Info2.png" />
-              <div class="ps-5 mt-1">
-                <div class="VersiaTextFeaturesTittle">Infographics</div>
-                <div class="VersiaTextFeaturesContent">Show intricate workings of your product.</div>
+            <div class="row">
+              <div class="col d-flex align-items-start">
+                <img width="50" height="50" src="img/Info2.png" />
+                <div class="ps-5 mt-1">
+                  <div class="VersiaTextFeaturesTittle">Infographics</div>
+                  <div class="VersiaTextFeaturesContent">
+                    Show intricate workings of your product.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col d-flex align-items-start">
-              <img width="50" height="50" src="img/Proto.png" />
-              <div class="ps-5 mt-1">
-                <div class="VersiaTextFeaturesTittle">Prototyping</div>
-                <div class="VersiaTextFeaturesContent">Preview your prototype before production.</div>
+            <div class="row">
+              <div class="col d-flex align-items-start">
+                <img width="50" height="50" src="img/Proto.png" />
+                <div class="ps-5 mt-1">
+                  <div class="VersiaTextFeaturesTittle">Prototyping</div>
+                  <div class="VersiaTextFeaturesContent">
+                    Preview your prototype before production.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6"><img src="img/girl-with-puzzle-5487a6.svg" width="100%" />
+          <div class="col-md-6">
+            <img src="img/girl-with-puzzle-5487a6.svg" width="100%" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Contact -->
-  <div id="Contact" class="bg">
+    <!-- Contact -->
+    <div id="Contact" class="bg">
+      <div class="container">
+        <div class="row VersiaSectionSpacing align-items-center">
+          <div class="col-md-6 b">
+            <h1 class="white">Get in Touch</h1>
+            <p class="white">
+              We're excited to hear from you!<br /><br />Whether you have
+              questions, need more information, or want to schedule a demo,
+              we're here to help.<br />
+            </p>
+            <a
+              href="mailto:sales@versia.studio?subject=Hello"
+              title="email"
+              class="btn btn-primary btn-lg active contact-button px-4 my-4 rounded-1"
+              role="button"
+              aria-pressed="true"
+              >sales@versia.studio</a
+            >
+          </div>
+          <div class="col-md-6">
+            <img src="img/community-548aab.svg" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <div class="container">
-      <div class="row VersiaSectionSpacing align-items-center">
-        <div class="col-md-6 b">
-          <h1 class="white">Get in Touch</h1>
-          <p class="white">We're excited to hear from
-            you!<br /><br />Whether you have questions, need more information, or want to schedule a demo, we're here to
-            help.<br />
-          </p>
-          <a href="mailto:info@versia.studio?subject=Hello" title="email"
-            class="btn btn-primary btn-lg active contact-button px-4 my-4 rounded-1" role="button"
-            aria-pressed="true">info@versia.studio</a>
-        </div>
-        <div class="col-md-6"><img src="img/community-548aab.svg" width="100%" />
+      <div class="row">
+        <div class="col py-3 my-2">
+          <a
+            href="#home"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <img src="img/LogoBlack3.png" class="bi" width="50" height="50" />
+          </a>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="row border-top py-3">
+        <div class="col-md-10 d-flex">
+          <small class="mb-3 mb-md-0 text-muted VersiaFooter"
+            >© 2024 Versia Studio. All rights reserved.</small
+          >
+        </div>
 
-  <!-- Footer -->
-  <div class="container">
-    <div class="row">
-      <div class="col py-3 my-2">
-        <a href="#home" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <img src="img/LogoBlack3.png" class="bi" width="50" height="50" />
-        </a>
-
+        <ul class="nav col-md-2 justify-content-end list-unstyled d-flex">
+          <li>
+            <a href="https://linkedin.com/showcase/versiastudio"
+              ><img
+                class="mb-3"
+                width="20"
+                height="20"
+                src="img/LinkedInBlack2.png"
+            /></a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="row border-top py-3">
-      <div class="col-md-10 d-flex">
-        <small class="mb-3 mb-md-0 text-muted VersiaFooter">© 2024 Versia Studio. All rights reserved.</small>
-      </div>
 
-      <ul class="nav col-md-2 justify-content-end list-unstyled d-flex">
-        <li><a href="https://linkedin.com/showcase/versiastudio"><img class="mb-3" width="20" height="20"
-              src="img/LinkedInBlack2.png" /></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
