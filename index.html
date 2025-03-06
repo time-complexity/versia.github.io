@@ -189,6 +189,82 @@
       .thin {
         font-weight: lighter;
       }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
     </style>
   </head>
 
@@ -245,15 +321,18 @@
       src="videos/AdriaPromoFlyBy_01.webm"
     ></video>-->
 
+
+
     <!-- Text + video -->
-    <div id="Hero">
-      <div class="container">
-        <div class="row VersiaSectionSpacing align-items-top">
+    <div class=" bg-body-tertiary">
+    <div id="Hero" >
+      <div class="container pt-5 pb-4">
+        <div class="row align-items-top">
           <div class="col-md-12">
             <h1 class="black">
               Let Your Clients Customize their Future Purchase in VR
             </h1>
-            <p class="pb-0">
+            <p >
               With Versia, customers can enter a virtual showroom and fully
               customize their future purchase. <br />This immersive experience
               lets them see and interact with their customized product as if
@@ -263,98 +342,81 @@
         </div>
       </div>
     </div>
+  </div>
+ <!-- START THE FEATURETTES -->
+ <div class="container my-5">
 
-    <!-- Materials -->
-    <div id="Hero">
-      <div class="container">
-        <div class="row align-items-top mb-5">
-          <div class="col-md-5">
-            <h1 class="black">Customize</h1>
-            <p>
-              Offer all your product choices and let customers find their
-              perfect combination.
-            </p>
-          </div>
-          <div class="col-md-7">
-            <video
-              style="
-                background-image: url('videos/posters/AdriaPromoMaterials_01.png');
-                background-size: cover;
-                background-position: center;
-              "
-              allowfullscreen="allowfullscreen"
-              width="100%"
-              loop
-              muted
-              playsinline
-              preload="metadata"
-              src="videos/AdriaPromoMaterials_01.webm"
-            ></video>
-          </div>
-        </div>
-      </div>
+
+  <div class="row featurette">
+    <div class="col-md-5">
+      <h1 class="black featurette-heading fw-normal lh-1">Customize</h1>
+      <p class="lead">
+        Offer all your product choices and let customers find their
+        perfect combination.
+      </p>
     </div>
-
-    <!-- Interaction -->
-    <div id="Hero">
-      <div class="container">
-        <div class="row align-items-top mb-5">
-          <div class="col-md-5">
-            <h1 class="black">Interact</h1>
-            <p>Customer can interact with the product.</p>
-          </div>
-          <div class="col-md-7">
-            <video
-              style="
-                background-image: url('videos/posters/AdriaPromoInteraction_01.png');
-                background-size: cover;
-                background-position: center;
-              "
-              allowfullscreen="allowfullscreen"
-              width="100%"
-              loop
-              muted
-              playsinline
-              preload="metadata"
-              src="videos/AdriaPromoInteraction_01.webm"
-              ></video>
-          </div>
-        </div>
-      </div>
+    <div class="col-md-7">
+      <video style="background-image: url('videos/posters/AdriaPromoMaterials_01.png'); background-size: cover; background-position: center;"
+        allowfullscreen="allowfullscreen"
+        width="100%"
+        loop
+        muted
+        playsinline
+        preload="metadata"
+        src="videos/AdriaPromoMaterials_01.webm">
+      </video>    
     </div>
-
-    <!-- FlyBy -->
-    <div id="Hero">
-      <div class="container">
-        <div class="row align-items-top mb-5">
-          <div class="col-md-5">
-            <h1 class="black">Explore</h1>
-            <p>
-              Customer can walk around your product in real scale, just like it
-              was there.
-            </p>
-          </div>
-
-          <div class="col-md-7">
-            <video
-              style="
-                background-image: url('videos/posters/AdriaPromoFlyBy_01.png');
-                background-size: cover;
-                background-position: center;
-              "
-              allowfullscreen="allowfullscreen"
-              width="100%"
-              loop
-              muted
-              playsinline
-              preload="metadata"
-              src="videos/AdriaPromoFlyBy_01.webm"
-            ></video>
-          </div>
-        </div>
-      </div>
+  </div>
+ 
+  <hr class="featurette-divider">
+ 
+  <div class="row featurette">
+    <div class="col-md-5 order-md-2">
+      <h1 class="black featurette-heading fw-normal lh-1">Interact</h1>
+      <p class="lead">Customer can interact with the product.</p>
     </div>
+    <div class="col-md-7 order-md-1">
+      <video style="background-image: url('videos/posters/AdriaPromoInteraction_01.png'); background-size: cover; background-position: center;"
+        allowfullscreen="allowfullscreen"
+        width="100%"
+        loop
+        muted
+        playsinline
+        preload="metadata"
+        src="videos/AdriaPromoInteraction_01.webm">
+      </video>    
+    </div>
+  </div>
+ 
+  <hr class="featurette-divider">
+ 
+  <div class="row featurette">
+    <div class="col-md-5">
+      <h1 class="black featurette-heading fw-normal lh-1">Explore</h1>
+      <p class="lead">
+        Customer can walk around your product in real scale, just like it
+        was there.
+      </p>
+    </div>
+    <div class="col-md-7">
+      <video
+        style="background-image: url('videos/posters/AdriaPromoFlyBy_01.png'); background-size: cover; background-position: center;"
+        allowfullscreen="allowfullscreen"
+        width="100%"
+        loop
+        muted
+        playsinline
+        preload="metadata"
+        src="videos/AdriaPromoFlyBy_01.webm">
+      </video>    
+    </div>
+  </div>
+ 
+  <!-- <hr class="featurette-divider"> -->
+ </div>
 
+
+ <!-- /END THE FEATURETTES -->
     <!-- Use case -->
     <div id="UseCase" class="white">
       <div class="container VersiaSectionSpacing">
@@ -544,6 +606,8 @@
         </div>
       </div>
     </div>
+
+
 
     <!-- Footer -->
     <div class="container">
