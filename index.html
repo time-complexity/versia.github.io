@@ -277,11 +277,17 @@
           </div>
           <div class="col-md-7">
             <video
+              style="
+                background-image: url('videos/posters/AdriaPromoMaterials_01.png');
+                background-size: cover;
+                background-position: center;
+              "
               allowfullscreen="allowfullscreen"
               width="100%"
               loop
-              autoplay
               muted
+              playsinline
+              preload="metadata"
               src="videos/AdriaPromoMaterials_01.webm"
             ></video>
           </div>
@@ -299,13 +305,19 @@
           </div>
           <div class="col-md-7">
             <video
+              style="
+                background-image: url('videos/posters/AdriaPromoInteraction_01.png');
+                background-size: cover;
+                background-position: center;
+              "
               allowfullscreen="allowfullscreen"
               width="100%"
               loop
-              autoplay
               muted
+              playsinline
+              preload="metadata"
               src="videos/AdriaPromoInteraction_01.webm"
-            ></video>
+              ></video>
           </div>
         </div>
       </div>
@@ -325,11 +337,17 @@
 
           <div class="col-md-7">
             <video
+              style="
+                background-image: url('videos/posters/AdriaPromoFlyBy_01.png');
+                background-size: cover;
+                background-position: center;
+              "
               allowfullscreen="allowfullscreen"
               width="100%"
               loop
-              autoplay
               muted
+              playsinline
+              preload="metadata"
               src="videos/AdriaPromoFlyBy_01.webm"
             ></video>
           </div>
@@ -368,11 +386,17 @@
           <!-- Empty column for spacing -->
           <div class="col-md-6">
             <video
+              style="
+                background-image: url('videos/posters/Products1.png');
+                background-size: cover;
+                background-position: center;
+              "
               allowfullscreen="allowfullscreen"
               width="100%"
               loop
-              autoplay
               muted
+              playsinline
+              preload="metadata"
               src="videos/Products1.webm"
             ></video>
           </div>
@@ -474,8 +498,9 @@
               allowfullscreen="allowfullscreen"
               width="100%"
               loop
-              autoplay
               muted
+              playsinline
+              preload="metadata"
               src="videos/HeroVideo1.webm"
             ></video>
           </div>
@@ -559,5 +584,26 @@
       crossorigin="anonymous"
     ></script>
     <script async type="module" src="assets/web-viewer.js"></script>
+        <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let options = {
+          threshold: 0.7,
+        };
+
+        let observer = new IntersectionObserver(playOnFocus, options);
+        let targets = document.querySelectorAll("video");
+        targets.forEach((target) => observer.observe(target));
+      });
+
+      const playOnFocus = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.play();
+          } else {
+            entry.target.pause();
+          }
+        });
+      };
+    </script>
   </body>
 </html>
